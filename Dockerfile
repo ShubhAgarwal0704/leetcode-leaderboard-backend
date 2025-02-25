@@ -6,4 +6,4 @@ RUN mvn clean package -DskipTests
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/leetcodedashboard-0.0.1-SNAPSHOT.jar leetcodedashboard.jar
 EXPOSE 8082
-ENTRYPOINT["java", "-jar","leetcodedashboard.jar"]
+ENTRYPOINT ["java", "-jar","leetcodedashboard.jar"]
