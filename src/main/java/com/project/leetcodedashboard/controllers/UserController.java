@@ -2,6 +2,7 @@ package com.project.leetcodedashboard.controllers;
 
 import com.project.leetcodedashboard.entities.StatsResponse;
 import com.project.leetcodedashboard.services.UserService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,6 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("api/v0")
+@Tag(name = "Leetcode APIs")
 public class UserController {
     @Autowired
     private UserService userService;
